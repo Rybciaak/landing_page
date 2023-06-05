@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+
+
+    <link
+      href="sass/main.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Landing Page</title>
+
+    <style>
+      section {
+        padding: 60px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+<!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark border-bottom border-warning p-5">
+      <div class="container-xxl">
+        <a href="#intro" class="navbar-brand">
+          <span class="fw-bold text-secondary text-warning"> ZANIM STUDIO </span>
+        </a>
+<!-- hamburger -->
+        <button
+          class="navbar-toggler border-warning"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+<!-- navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">O kursie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Opinie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#FAQ">FAQ</a>
+            </li>
+            <li>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+             Zapisz się! </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!--POPUP-->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Zapisz się na kurs</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row justify-content-center mt-3">            
+          <div class="col-lg-10">
+              <form>                    
+                  <label for="Imię" class="form-label m-1">Imię:</label>
+                  <input type="text" class="form-control mb-3" id="imie" placeholder="Julia">
+  
+                  <label for="email" class="form-label">Adres email:</label>
+                  <input type="email" class="form-control mb-3" id="email" placeholder="np. juliarybickaa@gmail.com">
+                                      
+                  <label for="query" class="mb-2">Dodatkowe pytania (opcjonalnie)</label>
+                  <textarea class="form-control" id="query" style="height: 100px" placeholder="Twoje pytanie..."></textarea>
+                                                      
+              </form>
+          </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anuluj</button>
+        <button type="button" class="btn btn-warning">Wyślij</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- main image & intro text -->
+    <section id="intro" class="border border-warning p-0 bg-dark text-light ">
+      <div class="container-lg">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-4 text-center text-md-start p-4">
+            <h1>
+              <div class="h3 my-0 py-0">RYSUNEK W STYLU</div>
+              <div class="display-2 fw-bold my-0 py-0">MANGI</div>
+            </h1>
+            <p class="lead my-4 text">
+              Interesujesz się japońską animacją? A może Twoje półki przepełnione są tomami mang? Jeśli tak jak my kochasz stylistykę japońskich ilustracji to jesteś we właściwym miejscu!
+            </p>
+            <a href="#form" class="btn btn-warning btn-lg">Zapisz się na kurs!</a>
+          </div>
+          <div class="col-md-8 text-center d-none d-md-block">
+            <img
+              class="img-fluid"
+              src="/assets/rysunek_postaci.jpg"
+              alt="rysunek_postaci"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+ 
+<!-- about course -->
+<section id="about" class="border border-warning p-3 bg-dark text-light ">
+  <div class="container-lg">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-3 text-center d-none d-md-block">
+        <img
+          class="img-fluid"
+          src="/assets/logo.png"
+          alt="logo_ZASNIM_STUDIO"
+        />
+      </div>
+      <div class="col-md-9 text-center text-md-start p-4">
+        <h1>
+          <div class="h3 my-0 py-0">O kursie</div>
+        </h1>
+        <p class="lead my-4 text">
+          Misją ZanimStudio jest promowanie japońskiej kultury i sztuki poprzez naukę japońskich technik tworzenia komiksu i animacji. Chcemy tworzyć miejsce, w którym manga i anime są traktowane jako pełnoprawne formy sztuki. W tym celu edukujemy oraz współpracujemy z artystami i organizacjami o podobnym charakterze, realizującymi podobne cele. 
+        </p>
+        <h5>Nasze współprace:</h5>
+        <p class="lead my-2 text">
+          Zagranica: Blacklist Crew Studio (Włochy) / Burning Star Comics (USA) / Studio Bulldog (Japonia) 
+        </p>
+        <p class="lead my-2 text">
+          Polska: Fundacja Młodego Kina (Warszawa), Uniwerystet Dzieci (Wrocław), NAMI Fundacja Przyjaźni Polsko-Japońskiej (Wrocław)
+        </p>
+        </div>      
+    </div>
+  </div>
+</section>
+
+
+<!-- benefits -->
+    <section id="benefits" class="bg-dark p-10 border border-warning">
+        <div class="container-lg">
+            <div class="text-center text-light">
+                <h2>Zakres kursu</h2>
+                <p class="lead text-muted">Zapisując się na kurs zyskujesz wiele korzyści!</p>
+            </div>
+
+            <div class="row my-5 align-items-center justify-content-center">
+                <div class="col-8 col-lg-4 col-xl-3 m-3">
+                    <div class="card border-0 p-3">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title pb-2">ANATOMIA</h4>                                                    
+                            <p class="card-text mx-2 text-muted ">Właściwa wiedza anatomiczna przyspiesza i podnosi jakość zarówno animowania jak i ilustrowania. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8 col-lg-4 col-xl-3 m-3">
+                    <div class="card border-0 p-3">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title pb-2">ILUSTRACJA</h4>                                                  
+                            <p class="card-text mx-2 text-muted ">W kolejnym module zajmiemy się teorią koloru, kompozycją oraz wszelkimi technikami tworzenia ilustracji.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8 col-lg-4 col-xl-3 m-3">
+                    <div class="card border-0 p-3">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title pb-2">ANIMACJA</h4>                                                    
+                            <p class="card-text mx-2 text-muted ">Ostatnim etapem będzie nauka podstaw animacji oraz poznanie technik japońskich animatorów.  </p>                            
+                        </div>
+                    </div>
+                </div>                          
+            </div>            
+        </div>
+
+ </section>
+  
+
+
+<!--gallery-->
+<section id="gallery" class="border border-warning bg-dark text-light">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-6 col-xl-3 p-1">
+        <img
+          class="img-fluid"
+          src="/assets/rysunek_1.png"
+          alt="logo_ZASNIM_STUDIO"
+        />
+    </div>
+    <div class="col-md-6 col-xl-3 p-1">
+      <img
+        class="img-fluid"
+        src="/assets/rysunek_2.png"
+        alt="logo_ZASNIM_STUDIO"
+      />
+  </div>
+  <div class="col-md-6 col-xl-3 p-1">
+    <img
+      class="img-fluid"
+      src="/assets/rysunek_3.png"
+      alt="logo_ZASNIM_STUDIO"
+    />
+</div>
+<div class="col-md-6 col-xl-3 p-1">
+  <img
+    class="img-fluid"
+    src="/assets/rysunek_4.png"
+    alt="logo_ZASNIM_STUDIO"
+  />
+</div>
+
+    </div>
+  </div>
+
+
+</section>
+
+
+
+<!-- opinions -->
+<section id="reviews" class="bg-dark text-light border border-warning">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2>Opinie</h2>
+        <p class="lead">Opnie osób, które uczestinczą w zajęciach</p>
+      </div>
+
+      <div class="row justify-content-center m-5">
+        <div class="col-lg-8">
+          <div class="list-group">
+            <div class="list-group-item p-4">
+              <h5 class="mb-1">Super kurs!</h5>
+              <p class="mb-1 p-2"> Kurs zapewnia dobrze ustrukturyzowany i kompleksowy program nauczania, który obejmuje wszystkie istotne aspekty rysowania i animacji. Od podstawowych technik po zaawansowane koncepcje, kurs zapewnia solidne podstawy, oferując jednocześnie możliwości rozwoju i eksperymentowania. </p>
+              <p class="small text-end pe-4">Nickname</p>              
+            </div>
+            <div class="list-group-item p-4">
+              <h5 class="mb-1">Dobra inwestycja</h5>
+              <p class="mb-1 p-2">Kurs wykorzystuje interaktywne metody nauczania, dzięki czemu proces nauki jest wciągający i przyjemny. Dzięki połączeniu lekcji wideo, ćwiczeń praktycznych i quizów uczniowie mogą aktywnie uczestniczyć i pogłębiać swoje zrozumienie nauczanych pojęć.</p>
+              <p class="small text-end pe-4">Nickname</p>    
+            </div>
+            <div class="list-group-item p-4">
+              <h5 class="mb-1">Zdecydowaine polecam!</h5>
+              <p class="mb-1 p-2">Kurs jest prowadzony przez doświadczonego nauczyciela, który ma głębokie zrozumienie tematu. Jego wiedza i pasja do rysowania i animacji są widoczne w nauczaniu, ponieważ dostarcza jasnych wyjaśnień, cennych wskazówek i konstruktywnych informacji zwrotnych, aby pomóc uczniom doskonalić swoje umiejętności.</p>
+              <p class="small text-end pe-4">Nickname</p>    
+            </div>
+            <div class="list-group-item p-4">
+              <h5 class="mb-1">Super!</h5>
+              <p class="mb-1 p-2">Jedną z największych zalet kursu jest elastyczność, jaką oferuje. Studenci mogą uzyskiwać dostęp do materiałów szkoleniowych we własnym tempie i dla wygody, co pozwala im dopasować naukę do ich napiętych harmonogramów. Ta elastyczność gwarantuje, że uczniowie mogą robić postępy w wygodnym tempie i powracać do lekcji w razie potrzeby.</p>
+              <p class="small text-end pe-4">Nickname</p>    
+            </div>
+            <div class="list-group-item p-4">
+              <h5 class="mb-1">Najlepsze community!</h5>
+              <p class="mb-1 p-2">Wiele kursów online tworzy wspierającą społeczność uczniów, którzy mają wspólne zainteresowania. Tworzy to pozytywne i motywujące środowisko, w którym uczniowie mogą wchodzić w interakcje z rówieśnikami, wymieniać opinie, a nawet współpracować przy projektach. Taka społeczność nie tylko zwiększa doświadczenie edukacyjne, ale także zapewnia platformę do nawiązywania kontaktów i budowania kontaktów z innymi artystami.
+              </p>
+              <p class="small text-end pe-4">Nickname</p>    
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+<!-- form -->
+    <section id="form" class="bg-dark text-light border border-warning">
+      <div class="container">
+       <div class="row justify-content-center">
+        <div class="text-center col-6">
+            <h2>Formularz zapisu</h2>
+                 
+         </div>
+        </div>
+
+        <div class="row justify-content-center mt-3">            
+            <div class="col-lg-6">
+                <form>                    
+                    <label for="Imię" class="form-label m-1">Imię:</label>
+                    <input type="text" class="form-control mb-3" id="imie" placeholder="Julia">
+
+                    <label for="email" class="form-label">Adres email:</label>
+                    <input type="email" class="form-control mb-3" id="email" placeholder="np. juliarybickaa@gmail.com">
+                                        
+                    <label for="query" class="mb-2">Dodatkowe pytania (opcjonalnie)</label>
+                    <textarea class="form-control" id="query" style="height: 100px" placeholder="Twoje pytanie..."></textarea>
+                                                         
+                    <div class="m-4 text-center">
+                         <button type="submit" class="btn btn-warning">Wyślij</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+      </div>
+</section>
+
+<!-- FAQ -->
+<section id="FAQ" class="border border-warning bg-dark text-light ">
+  <div class="container-md">
+      <div class="text-center">
+          <h2>NAJCZĘŚCIEJ ZADAWANE PYTANIA</h2>
+      </div>      
+      <div class="row justify-content-center mx-5 mt-5 mb-3">
+        <div class="col-10">
+          <p> Program zajęć regularnych jest dostosowywany indywidualnie do potrzeb uczestników, zajęcia podzielone są na trzy główne moduły, które opracowywane są podczas zajęć wtorkowych:</p>
+        </div>
+      </div>    
+
+      <div class="row justify-content-center mx-5">
+        <div class="col-lg-10">
+          <div class="accordion" id="accordionExample">
+
+            <div class="accordion-item m-1">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Jaki poziom umiejętności jest wymagany, aby wziąć udział w tym kursie rysunku?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Nasz kurs rysunku jest przeznaczony dla wszystkich poziomów umiejętności, od początkujących do bardziej zaawansowanych artystów. Niezależnie od tego, czy dopiero zaczynasz, czy chcesz udoskonalić swoje umiejętności, nasz kurs zapewnia kompleksowe lekcje odpowiednie dla każdego.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item m-1">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Jakich materiałów potrzebuję, aby wziąć udział w kursie?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Do udziału w kursie potrzebne będą podstawowe przybory do rysowania, takie jak ołówki, gumki, szkicowniki i papier. Dodatkowo w miarę postępów w kursie możemy wprowadzać inne materiały, takie jak pisaki lub markery. Szczegółowa lista zalecanych materiałów zostanie podana na początku kursu.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item m-1">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Czy do kursu jest zalecane specjalne oprogramowanie lub program do rysowania?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Nasz kurs koncentruje się przede wszystkim na tradycyjnych technikach rysunkowych, więc nie jest wymagane żadne specjalne oprogramowanie ani program do rysowania. Jeśli jednak na kursie wprowadzimy koncepcje rysunku cyfrowego, możemy polecić popularne opcje oprogramowania, takie jak Adobe Photoshop lub Procreate, ale nie są one obowiązkowe.</p>
+                </div>
+              </div>
+              </div>
+
+
+              <div class="accordion-item m-1">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    Jak długo trwa kurs i czy mogę uczyć się we własnym tempie?
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Czas trwania kursu może się różnić w zależności od szybkości uczenia się i złożoności omawianych tematów. Średnio studenci kończą kurs w ciągu 6 do 8 tygodni. Masz jednak swobodę uczenia się we własnym tempie. Po zapisaniu się będziesz mieć dożywotni dostęp do materiałów kursu, co pozwoli ci wrócić do lekcji w dowolnym momencie.</p>
+                  </div>
+                </div>
+                </div>
+
+                <div class="accordion-item m-1">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                      Czy podczas kursu otrzymam informację zwrotną lub wskazówki od instruktorów?
+                    </button>
+                  </h2>
+                  <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Absolutnie! Nasi doświadczeni instruktorzy zapewniają informacje zwrotne i wskazówki podczas całego kursu. Będziesz mieć możliwość przesłania swoich zadań lub dzieł sztuki do recenzji, a nasi instruktorzy dostarczą konstruktywnych informacji zwrotnych i sugestii, które pomogą Ci poprawić swoje umiejętności.</p>
+                    </div>
+                  </div>
+                </div>
+  
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      </div>
+  </div>
+</section>
+
+</html>
